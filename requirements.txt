@@ -1,0 +1,9 @@
+anthropic~=0.98
+fastapi~=0.136
+uvicorn[standard]~=0.46
+pydantic~=2.13
+seaborn~=0.13
+matplotlib~=3.10
+httpx~=0.28
+pandas~=3.0
+openpyxl~=3.1

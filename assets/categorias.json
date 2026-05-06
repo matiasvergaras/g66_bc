@@ -1,0 +1,186 @@
+{
+  "Clasificacion": {
+    "Categoria": {
+      "TRANSFERENCIAS_ENVIOS": {
+        "Descripcion": "Consultas y problemas relacionados con envios de dinero nacionales e internacionales, incluyendo demoras, rechazos, errores en datos del destinatario y devoluciones de fondos.",
+        "Subcategoria": {
+          "ENVIO_PENDIENTE": {
+            "Descripcion": "Transferencia enviada que permanece en estado pendiente o en transito mas alla del tiempo esperado."
+          },
+          "ENVIO_RECHAZADO": {
+            "Descripcion": "Transferencia rechazada por el banco destino, banco intermediario, limites de cuenta u otras restricciones operativas."
+          },
+          "ERROR_DATOS_DESTINO": {
+            "Descripcion": "Error en los datos del beneficiario como nombre, IBAN, CBU, cuenta bancaria o codigo Swift que impide completar el envio."
+          },
+          "DINERO_NO_RECIBIDO": {
+            "Descripcion": "El envio figura como completado en la app pero el beneficiario no ha recibido los fondos en su cuenta destino."
+          },
+          "DEVOLUCION_FONDOS": {
+            "Descripcion": "Fondos no devueltos al saldo de origen tras una transferencia rechazada o fallida."
+          },
+          "RUTA_NO_DISPONIBLE": {
+            "Descripcion": "Ruta de envio no disponible por mantenimiento tecnico, sanciones internacionales o restricciones regulatorias del pais destino."
+          }
+        }
+      },
+      "CUENTA_PERFIL": {
+        "Descripcion": "Gestion de cuenta del usuario incluyendo bloqueos, verificacion de identidad (KYC), cierre de cuenta, cambios de datos personales, cuentas Business y requisitos de cumplimiento normativo.",
+        "Subcategoria": {
+          "BLOQUEO_CUENTA": {
+            "Descripcion": "Cuenta bloqueada o congelada por actividad sospechosa, verificacion pendiente o restriccion de seguridad."
+          },
+          "VERIFICACION_IDENTIDAD": {
+            "Descripcion": "Problemas con el proceso de validacion de identidad incluyendo selfie, documentos de identificacion, reconocimiento facial o validacion de datos personales."
+          },
+          "CIERRE_CUENTA": {
+            "Descripcion": "Solicitudes de cierre de cuenta, eliminacion de datos personales, saldo remanente que impide el cierre o certificados de cierre."
+          },
+          "CAMBIO_DATOS_PERFIL": {
+            "Descripcion": "Solicitud de cambio de telefono, correo electronico, pais de residencia u otros datos del perfil del usuario."
+          },
+          "CUENTA_BUSINESS": {
+            "Descripcion": "Validacion, aprobacion o migracion de cuentas empresariales, incluyendo documentacion legal de la empresa."
+          },
+          "CUMPLIMIENTO_NORMATIVO": {
+            "Descripcion": "Requisitos de compliance como declaracion de origen de fondos, verificacion de Persona Expuesta Politicamente (PEP), limites por nivel de cuenta o documentacion adicional exigida por regulacion."
+          }
+        }
+      },
+      "SEGURIDAD_FRAUDE": {
+        "Descripcion": "Incidentes de seguridad que afectan la cuenta o tarjeta del usuario, incluyendo accesos no autorizados, phishing, clonacion de tarjeta, transacciones fraudulentas y perdida o robo de dispositivos.",
+        "Subcategoria": {
+          "ACCESO_NO_AUTORIZADO": {
+            "Descripcion": "Inicio de sesion sospechoso, intento de cambio de clave no solicitado o actividad de terceros en la cuenta del usuario."
+          },
+          "PHISHING_ESTAFA": {
+            "Descripcion": "Reportes de estafas, suplantacion de marca en redes sociales, llamadas fraudulentas solicitando claves o intentos de ingenieria social contra el usuario."
+          },
+          "CLONACION_TARJETA": {
+            "Descripcion": "Tarjeta fisica clonada con compras o retiros en cajero no realizados por el titular."
+          },
+          "TRANSACCION_NO_RECONOCIDA": {
+            "Descripcion": "Cargos, retiros o movimientos en la cuenta que el usuario no reconoce como propios."
+          },
+          "ROBO_DISPOSITIVO": {
+            "Descripcion": "Perdida o robo del celular u otro dispositivo con la sesion de Global66 activa, requiriendo bloqueo inmediato."
+          }
+        }
+      },
+      "TARJETA": {
+        "Descripcion": "Problemas y consultas sobre la tarjeta fisica o virtual de Global66, incluyendo entrega, danos, rechazos en comercio o cajero, reposicion e integracion con wallets digitales.",
+        "Subcategoria": {
+          "ENTREGA_TARJETA": {
+            "Descripcion": "Tarjeta fisica no entregada, direccion incorrecta, demora en el envio o problemas con el repartidor."
+          },
+          "TARJETA_DANADA": {
+            "Descripcion": "Tarjeta fisica con defectos de fabricacion, chip danado, nombre mal impreso, material despegado o deterioro prematuro."
+          },
+          "RECHAZO_TARJETA": {
+            "Descripcion": "Tarjeta rechazada en punto de venta, cajero automatico o pago online a pesar de tener saldo suficiente."
+          },
+          "REPOSICION_TARJETA": {
+            "Descripcion": "Solicitud de reemplazo de tarjeta por dano, perdida, robo, vencimiento o error de impresion."
+          },
+          "WALLET_DIGITAL": {
+            "Descripcion": "Problemas para vincular la tarjeta con Apple Pay, Google Pay u otras billeteras digitales."
+          }
+        }
+      },
+      "COBROS_COMISIONES": {
+        "Descripcion": "Reclamos y consultas sobre cobros inesperados, comisiones, tipo de cambio, cargos duplicados, suscripciones no deseadas y ajustes de saldo no autorizados.",
+        "Subcategoria": {
+          "COMISION_INESPERADA": {
+            "Descripcion": "Cobro de comision que el usuario no esperaba, como mantenimiento, inactividad, retiro en cajero o comision de red."
+          },
+          "TIPO_CAMBIO": {
+            "Descripcion": "Diferencia entre la tasa de cambio mostrada y la aplicada, spread excesivo o discrepancia con la tasa de mercado."
+          },
+          "COBRO_DUPLICADO": {
+            "Descripcion": "Cargo procesado dos o mas veces por la misma transaccion, ya sea en carga de saldo, compra o transferencia."
+          },
+          "COBRO_SUSCRIPCION": {
+            "Descripcion": "Cargos recurrentes de comercios externos como Spotify, Netflix o Disney+ que el usuario quiere bloquear o desconocer."
+          },
+          "AJUSTE_SALDO": {
+            "Descripcion": "Descuento unilateral del saldo por ajustes de tasa, correcciones operativas o diferencias de procesamiento no comunicadas al usuario."
+          }
+        }
+      },
+      "APP_PLATAFORMA": {
+        "Descripcion": "Errores tecnicos, fallas de rendimiento, problemas de idioma y funcionalidades no disponibles en la aplicacion movil o plataforma web de Global66.",
+        "Subcategoria": {
+          "ERROR_TECNICO": {
+            "Descripcion": "Errores de servidor (502, 500), cierres inesperados de la app, pantallas en blanco o funciones que no cargan."
+          },
+          "IDIOMA_TRADUCCION": {
+            "Descripcion": "Interfaz en idioma incorrecto, errores de traduccion o discrepancia entre el idioma del dispositivo y el de la app."
+          },
+          "RENDIMIENTO_LENTO": {
+            "Descripcion": "App lenta para cargar saldo, contactos, historial de movimientos u otras secciones."
+          },
+          "FUNCION_NO_DISPONIBLE": {
+            "Descripcion": "Funcionalidades que no aparecen, botones faltantes o features en estado 'Proximamente' sin fecha clara."
+          },
+          "FALLA_CONEXION": {
+            "Descripcion": "Errores de conexion persistentes, imposibilidad de iniciar sesion o problemas de comunicacion entre la app y los servidores."
+          }
+        }
+      },
+      "RECLAMO_QUEJA": {
+        "Descripcion": "Quejas formales del usuario, amenazas de accion regulatoria o legal, mala atencion al cliente e incumplimiento de plazos o promesas. Categoria clave para detectar alertas de riesgo reputacional y regulatorio.",
+        "Subcategoria": {
+          "AMENAZA_REGULATORIA": {
+            "Descripcion": "Usuario que menciona acudir a entidades regulatorias (CMF, SERNAC, SBS, Condusef), abogados o acciones legales."
+          },
+          "MALA_ATENCION": {
+            "Descripcion": "Queja por trato inadecuado de un ejecutivo, corte de llamada, demora excesiva en respuesta o acoso comercial."
+          },
+          "INCUMPLIMIENTO_PROMESA": {
+            "Descripcion": "Global66 no cumplio con plazos, montos, condiciones o compromisos previamente comunicados al usuario."
+          },
+          "PROTECCION_DATOS": {
+            "Descripcion": "Reclamos sobre privacidad, eliminacion de datos personales, filtracion de informacion o comunicaciones no deseadas post-cierre."
+          }
+        }
+      },
+      "PRODUCTO_INFO": {
+        "Descripcion": "Consultas informativas sobre productos y servicios de Global66, incluyendo funcionalidades de la cuenta, documentacion, billetera multimoneda, medios de pago y disponibilidad en nuevos mercados.",
+        "Subcategoria": {
+          "INFO_SERVICIOS": {
+            "Descripcion": "Preguntas generales sobre como funcionan los envios, la tarjeta, la cuenta o los servicios disponibles por pais."
+          },
+          "COMPROBANTES_CERTIFICADOS": {
+            "Descripcion": "Solicitud de estados de cuenta, comprobantes con firma digital, certificados de saldo, reportes tributarios o historiales de movimientos."
+          },
+          "FUNCIONALIDAD_NUEVA": {
+            "Descripcion": "Consultas sobre funciones proximas como cripto, acciones, link de pago, metas de ahorro o servicios anunciados pero no habilitados."
+          },
+          "CUENTA_MULTIMONEDA": {
+            "Descripcion": "Preguntas sobre la billetera multimoneda, conversion entre divisas, retiro en moneda extranjera y datos bancarios para recibir pagos internacionales."
+          },
+          "ALIANZAS_COMERCIALES": {
+            "Descripcion": "Consultas sobre partnerships, corresponsales fisicos, integraciones con plataformas externas (Amazon, Mercado Pago) o plan Business para empresas."
+          }
+        }
+      },
+      "REEMBOLSO_DEVOLUCION": {
+        "Descripcion": "Solicitudes de devolucion de dinero por transferencias fallidas, cargos no reconocidos, comisiones indebidas o retenciones temporales no liberadas.",
+        "Subcategoria": {
+          "DEVOLUCION_TRANSFERENCIA": {
+            "Descripcion": "Reembolso solicitado por una transferencia fallida, rechazada o enviada con datos erroneos donde los fondos no retornaron."
+          },
+          "DESCONOCIMIENTO_CARGO": {
+            "Descripcion": "Disputa de cargo que el usuario no reconoce y solicita revertir, ya sea por fraude o error del comercio."
+          },
+          "REEMBOLSO_COMISION": {
+            "Descripcion": "Solicitud de devolucion de comisiones cobradas por transferencias rechazadas, retiros fallidos u operaciones no completadas."
+          },
+          "REEMBOLSO_PENDIENTE": {
+            "Descripcion": "Reembolso ya solicitado o prometido que no se ha concretado dentro del plazo informado."
+          }
+        }
+      }
+    }
+  }
+}
