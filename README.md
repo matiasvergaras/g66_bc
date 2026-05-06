@@ -24,7 +24,7 @@ a automatizar y el contrato de la API que se construyó a partir de ese análisi
 
 ### 2. La API — `src/`
 
-Nombrada "Sofía" en honor al chatbot de Global66 en WhatsApp, donde est lógica podría incorporarse
+Nombrada "Sofía" en honor al chatbot de Global66 en WhatsApp, donde esta lógica podría incorporarse
  algún día.
 
 ```
@@ -36,12 +36,12 @@ src/
 └── models.py     # Enums, schemas de entrada/salida y schema interno del LLM
 ```
 
-`assets/system_prompt.txt` contiene el System Prompt. 
-`assets/categorias.json` contiene la taxonomía usada tanto en el notebook como en la API.
+- `assets/system_prompt.txt` contiene el System Prompt. 
+- `assets/categorias.json` contiene la taxonomía usada tanto en el notebook como en la API.
 
-El endpoint principal es `POST /sofia/classify`. Recibe un mensaje de soporte (INBOUND o OUTBOUND),
-lo acumula en memoria y, para mensajes INBOUND, analiza toda la conversación del caso con el LLM.
-Devuelve un JSON con la polaridad de sentimiento detectado (NEGATIVO/NEUTRAL/POSITIVO), la categoría
+El endpoint principal es `POST /sofia/classify`. Recibe un mensaje de soporte (`INBOUND` o `OUTBOUND`),
+lo acumula en memoria y, para mensajes `INBOUND`, analiza toda la conversación del caso con el LLM.
+Devuelve un JSON con la polaridad de sentimiento detectado (`NEGATIVO`/`NEUTRAL`/`POSITIVO`), la categoría
 y subcategoría de la intención del usuario según la taxonomía, un nivel de urgencia y una decision 
 `keep_hearing` si considera que hasta el momento no se requiere tratamiento al fraude o `trigger_block` 
 si lo detecta, junto con la respuesta sugerida para el usuario.
@@ -133,7 +133,7 @@ Los endpoints son los mismos descritos para el caso local.
 ### 4. Arquitectura de la solución
 
 Las decisiones lógicas y arquitectónicas del proyecto se detallan en el archivo `analysis.ipynb`, sección 4. 
-A modo de introducción, a continuación se despliega el diagrama de arquitectura.
+A modo de adelanto, a continuación se despliega el diagrama de arquitectura.
 
 ![assets/architecture.png](assets/architecture.png)
 
