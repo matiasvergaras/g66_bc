@@ -1,18 +1,18 @@
 # One Pager — Primera Línea de Defensa contra Fraude en Tiempo Real
 
-## El problema
+## Contexto
 
 Global66 revisa manualmente solo el 10% de los mensajes de soporte, con una brecha promedio de 48 horas. Para la mayoría de categorías esto genera frustración; para **fraude**, genera daño financiero directo. En 48 horas un atacante ya vació la cuenta y el usuario se convirtió en detractor.
 
-## El diagnóstico
+## Diagnóstico
 
 Se analizaron las 250 conversaciones del dataset proporcionado, clasificándolas por categoría, sentimiento y urgencia. El análisis reveló distintos **Weak Points** (disponibles en el documento `analysis.ipynb`, sección 4), de los cuales los temas asociados a Seguridad y Fraudes mostrarían la mayor concentración de riesgo: 100% sentimiento negativo, 96% urgencia crítica. Es además el único problema donde existe un *next step* claro y automatizable (bloquear la cuenta, notificar al usuario, escalar al equipo de fraude), y donde el costo de un falso positivo por parte del agente (bloqueo innecesario, reversible) es órdenes de magnitud menor que el costo de no actuar a tiempo.
 
-## El problema raíz escogido
+## Problema raíz escogido
 
 El problema raíz a resolver es que no existe una primera línea de defensa que monitoree mensajes entrantes en tiempo real. El 90% no se revisa manualmente, y el 10% que sí se revisa llega tarde. Para un escenario de fraude, llegar tarde implica daño real, lo cual nos lleva a perder un usuario y ganar un posible detractor.
 
-## La solución
+## Solución
 
 Una API reactiva que se conecta al flujo de soporte existente. Cada mensaje entrante pasa por el endpoint `POST /sofia/classify`, que:
 
