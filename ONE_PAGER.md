@@ -43,4 +43,4 @@ La solución está pensada para crecer en dos ejes:
 
 ---
 
-**Autor:** Matias Vergara · matiasvergara@ug.uchile.cl
+**Autor:** Matias Vergara · matiasjvs@gmail.com
