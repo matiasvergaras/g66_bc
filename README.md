@@ -139,4 +139,4 @@ A modo de adelanto, a continuación se despliega el diagrama de arquitectura.
 
 ---
 
-**Autor:** Matias Vergara · matiasvergara@ug.uchile.cl
+**Autor:** Matias Vergara · matiasjvs@gmail.com
